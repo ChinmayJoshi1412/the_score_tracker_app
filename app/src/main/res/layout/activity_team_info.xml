@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbarStyle="outsideOverlay">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".TeamInfo">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FFDE03"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter team names"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:layout_marginTop="75dp"
+                android:layout_marginLeft="20dp"/>
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/team1"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:fontFamily="sans-serif-condensed-medium"
+                android:hint="Team 1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
+                android:textSize="30sp"
+                android:inputType="text"
+                android:backgroundTint="#FF3700B3"/>
+            <EditText
+                android:textColor="@color/black"
+                android:id="@+id/team2"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text=""
+                android:hint="Team 2"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
+                android:textSize="30sp"
+                android:inputType="text"
+                android:backgroundTint="#FF3700B3"/>
+            <Button
+                android:id="@+id/next"
+                android:layout_marginTop="100dp"
+                android:layout_marginLeft="125dp"
+                android:layout_width="150dp"
+                android:layout_height="75dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:text="Next"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
